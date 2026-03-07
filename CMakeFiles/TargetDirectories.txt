@@ -1,0 +1,3 @@
+/home/faith/Work/tries/secure_stream/build/CMakeFiles/test.dir
+/home/faith/Work/tries/secure_stream/build/CMakeFiles/edit_cache.dir
+/home/faith/Work/tries/secure_stream/build/CMakeFiles/rebuild_cache.dir
