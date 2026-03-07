@@ -72,28 +72,28 @@ include CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/codegen:
 .PHONY : CMakeFiles/test.dir/codegen
 
-CMakeFiles/test.dir/test.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/test.cpp.o: /home/faith/Work/tries/secure_stream/test.cpp
-CMakeFiles/test.dir/test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/test.cpp.o -MF CMakeFiles/test.dir/test.cpp.o.d -o CMakeFiles/test.dir/test.cpp.o -c /home/faith/Work/tries/secure_stream/test.cpp
+CMakeFiles/test.dir/test_packet.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/test_packet.cpp.o: /home/faith/Work/tries/secure_stream/test_packet.cpp
+CMakeFiles/test.dir/test_packet.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/test_packet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/test_packet.cpp.o -MF CMakeFiles/test.dir/test_packet.cpp.o.d -o CMakeFiles/test.dir/test_packet.cpp.o -c /home/faith/Work/tries/secure_stream/test_packet.cpp
 
-CMakeFiles/test.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/faith/Work/tries/secure_stream/test.cpp > CMakeFiles/test.dir/test.cpp.i
+CMakeFiles/test.dir/test_packet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/test_packet.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/faith/Work/tries/secure_stream/test_packet.cpp > CMakeFiles/test.dir/test_packet.cpp.i
 
-CMakeFiles/test.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/faith/Work/tries/secure_stream/test.cpp -o CMakeFiles/test.dir/test.cpp.s
+CMakeFiles/test.dir/test_packet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/test_packet.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/faith/Work/tries/secure_stream/test_packet.cpp -o CMakeFiles/test.dir/test_packet.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/test.cpp.o"
+"CMakeFiles/test.dir/test_packet.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test: CMakeFiles/test.dir/test.cpp.o
+test: CMakeFiles/test.dir/test_packet.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/compiler_depend.ts
 test: /usr/lib/libssl.so

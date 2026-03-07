@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/faith/Work/tries/secure_stream/test.cpp" "CMakeFiles/test.dir/test.cpp.o" "gcc" "CMakeFiles/test.dir/test.cpp.o.d"
+  "/home/faith/Work/tries/secure_stream/test_packet.cpp" "CMakeFiles/test.dir/test_packet.cpp.o" "gcc" "CMakeFiles/test.dir/test_packet.cpp.o.d"
   "" "test" "gcc" "CMakeFiles/test.dir/link.d"
   )
 

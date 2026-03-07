@@ -2,7 +2,7 @@ test: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
-  CMakeFiles/test.dir/test.cpp.o \
+  CMakeFiles/test.dir/test_packet.cpp.o \
   /usr/lib/libssl.so \
   /usr/lib/libcrypto.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
@@ -39,7 +39,7 @@ test: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
-CMakeFiles/test.dir/test.cpp.o:
+CMakeFiles/test.dir/test_packet.cpp.o:
 
 /usr/lib/libssl.so:
 
