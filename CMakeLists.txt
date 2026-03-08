@@ -4,6 +4,8 @@ project(secure_stream)
 find_package(OpenSSL REQUIRED)
 
 add_executable(test test_packet.cpp)
+add_executable(sender sender.cpp)
+add_executable(receiver receiver.cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
