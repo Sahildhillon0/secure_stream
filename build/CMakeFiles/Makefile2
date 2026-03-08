@@ -64,10 +64,18 @@ CMAKE_BINARY_DIR = /home/faith/Work/tries/secure_stream/build
 
 # The main recursive "all" target.
 all: CMakeFiles/test.dir/all
+all: CMakeFiles/sender.dir/all
+all: CMakeFiles/receiver.dir/all
+all: CMakeFiles/udp_sender.dir/all
+all: CMakeFiles/udp_receiver.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/test.dir/codegen
+codegen: CMakeFiles/sender.dir/codegen
+codegen: CMakeFiles/receiver.dir/codegen
+codegen: CMakeFiles/udp_sender.dir/codegen
+codegen: CMakeFiles/udp_receiver.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -76,6 +84,10 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/test.dir/clean
+clean: CMakeFiles/sender.dir/clean
+clean: CMakeFiles/receiver.dir/clean
+clean: CMakeFiles/udp_sender.dir/clean
+clean: CMakeFiles/udp_receiver.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,7 +97,7 @@ clean: CMakeFiles/test.dir/clean
 CMakeFiles/test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=1,2 "Built target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=5,6 "Built target test"
 .PHONY : CMakeFiles/test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -102,13 +114,141 @@ test: CMakeFiles/test.dir/rule
 # codegen rule for target.
 CMakeFiles/test.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=1,2 "Finished codegen for target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=5,6 "Finished codegen for target test"
 .PHONY : CMakeFiles/test.dir/codegen
 
 # clean rule for target.
 CMakeFiles/test.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
 .PHONY : CMakeFiles/test.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sender.dir
+
+# All Build rule for target.
+CMakeFiles/sender.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sender.dir/build.make CMakeFiles/sender.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sender.dir/build.make CMakeFiles/sender.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=3,4 "Built target sender"
+.PHONY : CMakeFiles/sender.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sender.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faith/Work/tries/secure_stream/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sender.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faith/Work/tries/secure_stream/build/CMakeFiles 0
+.PHONY : CMakeFiles/sender.dir/rule
+
+# Convenience name for target.
+sender: CMakeFiles/sender.dir/rule
+.PHONY : sender
+
+# codegen rule for target.
+CMakeFiles/sender.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sender.dir/build.make CMakeFiles/sender.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=3,4 "Finished codegen for target sender"
+.PHONY : CMakeFiles/sender.dir/codegen
+
+# clean rule for target.
+CMakeFiles/sender.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sender.dir/build.make CMakeFiles/sender.dir/clean
+.PHONY : CMakeFiles/sender.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/receiver.dir
+
+# All Build rule for target.
+CMakeFiles/receiver.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver.dir/build.make CMakeFiles/receiver.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver.dir/build.make CMakeFiles/receiver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=1,2 "Built target receiver"
+.PHONY : CMakeFiles/receiver.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/receiver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faith/Work/tries/secure_stream/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/receiver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faith/Work/tries/secure_stream/build/CMakeFiles 0
+.PHONY : CMakeFiles/receiver.dir/rule
+
+# Convenience name for target.
+receiver: CMakeFiles/receiver.dir/rule
+.PHONY : receiver
+
+# codegen rule for target.
+CMakeFiles/receiver.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver.dir/build.make CMakeFiles/receiver.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=1,2 "Finished codegen for target receiver"
+.PHONY : CMakeFiles/receiver.dir/codegen
+
+# clean rule for target.
+CMakeFiles/receiver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver.dir/build.make CMakeFiles/receiver.dir/clean
+.PHONY : CMakeFiles/receiver.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/udp_sender.dir
+
+# All Build rule for target.
+CMakeFiles/udp_sender.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_sender.dir/build.make CMakeFiles/udp_sender.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_sender.dir/build.make CMakeFiles/udp_sender.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=9,10 "Built target udp_sender"
+.PHONY : CMakeFiles/udp_sender.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/udp_sender.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faith/Work/tries/secure_stream/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/udp_sender.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faith/Work/tries/secure_stream/build/CMakeFiles 0
+.PHONY : CMakeFiles/udp_sender.dir/rule
+
+# Convenience name for target.
+udp_sender: CMakeFiles/udp_sender.dir/rule
+.PHONY : udp_sender
+
+# codegen rule for target.
+CMakeFiles/udp_sender.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_sender.dir/build.make CMakeFiles/udp_sender.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=9,10 "Finished codegen for target udp_sender"
+.PHONY : CMakeFiles/udp_sender.dir/codegen
+
+# clean rule for target.
+CMakeFiles/udp_sender.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_sender.dir/build.make CMakeFiles/udp_sender.dir/clean
+.PHONY : CMakeFiles/udp_sender.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/udp_receiver.dir
+
+# All Build rule for target.
+CMakeFiles/udp_receiver.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_receiver.dir/build.make CMakeFiles/udp_receiver.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_receiver.dir/build.make CMakeFiles/udp_receiver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=7,8 "Built target udp_receiver"
+.PHONY : CMakeFiles/udp_receiver.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/udp_receiver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faith/Work/tries/secure_stream/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/udp_receiver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faith/Work/tries/secure_stream/build/CMakeFiles 0
+.PHONY : CMakeFiles/udp_receiver.dir/rule
+
+# Convenience name for target.
+udp_receiver: CMakeFiles/udp_receiver.dir/rule
+.PHONY : udp_receiver
+
+# codegen rule for target.
+CMakeFiles/udp_receiver.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_receiver.dir/build.make CMakeFiles/udp_receiver.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/faith/Work/tries/secure_stream/build/CMakeFiles --progress-num=7,8 "Finished codegen for target udp_receiver"
+.PHONY : CMakeFiles/udp_receiver.dir/codegen
+
+# clean rule for target.
+CMakeFiles/udp_receiver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_receiver.dir/build.make CMakeFiles/udp_receiver.dir/clean
+.PHONY : CMakeFiles/udp_receiver.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

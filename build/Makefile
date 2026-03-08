@@ -129,6 +129,106 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+#=============================================================================
+# Target rules for targets named sender
+
+# Build rule for target.
+sender: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sender
+.PHONY : sender
+
+# fast build rule for target.
+sender/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sender.dir/build.make CMakeFiles/sender.dir/build
+.PHONY : sender/fast
+
+#=============================================================================
+# Target rules for targets named receiver
+
+# Build rule for target.
+receiver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 receiver
+.PHONY : receiver
+
+# fast build rule for target.
+receiver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver.dir/build.make CMakeFiles/receiver.dir/build
+.PHONY : receiver/fast
+
+#=============================================================================
+# Target rules for targets named udp_sender
+
+# Build rule for target.
+udp_sender: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 udp_sender
+.PHONY : udp_sender
+
+# fast build rule for target.
+udp_sender/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_sender.dir/build.make CMakeFiles/udp_sender.dir/build
+.PHONY : udp_sender/fast
+
+#=============================================================================
+# Target rules for targets named udp_receiver
+
+# Build rule for target.
+udp_receiver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 udp_receiver
+.PHONY : udp_receiver
+
+# fast build rule for target.
+udp_receiver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_receiver.dir/build.make CMakeFiles/udp_receiver.dir/build
+.PHONY : udp_receiver/fast
+
+receiver.o: receiver.cpp.o
+.PHONY : receiver.o
+
+# target to build an object file
+receiver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver.dir/build.make CMakeFiles/receiver.dir/receiver.cpp.o
+.PHONY : receiver.cpp.o
+
+receiver.i: receiver.cpp.i
+.PHONY : receiver.i
+
+# target to preprocess a source file
+receiver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver.dir/build.make CMakeFiles/receiver.dir/receiver.cpp.i
+.PHONY : receiver.cpp.i
+
+receiver.s: receiver.cpp.s
+.PHONY : receiver.s
+
+# target to generate assembly for a file
+receiver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver.dir/build.make CMakeFiles/receiver.dir/receiver.cpp.s
+.PHONY : receiver.cpp.s
+
+sender.o: sender.cpp.o
+.PHONY : sender.o
+
+# target to build an object file
+sender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sender.dir/build.make CMakeFiles/sender.dir/sender.cpp.o
+.PHONY : sender.cpp.o
+
+sender.i: sender.cpp.i
+.PHONY : sender.i
+
+# target to preprocess a source file
+sender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sender.dir/build.make CMakeFiles/sender.dir/sender.cpp.i
+.PHONY : sender.cpp.i
+
+sender.s: sender.cpp.s
+.PHONY : sender.s
+
+# target to generate assembly for a file
+sender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sender.dir/build.make CMakeFiles/sender.dir/sender.cpp.s
+.PHONY : sender.cpp.s
+
 test_packet.o: test_packet.cpp.o
 .PHONY : test_packet.o
 
@@ -153,6 +253,54 @@ test_packet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test_packet.cpp.s
 .PHONY : test_packet.cpp.s
 
+udp_receiver.o: udp_receiver.cpp.o
+.PHONY : udp_receiver.o
+
+# target to build an object file
+udp_receiver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_receiver.dir/build.make CMakeFiles/udp_receiver.dir/udp_receiver.cpp.o
+.PHONY : udp_receiver.cpp.o
+
+udp_receiver.i: udp_receiver.cpp.i
+.PHONY : udp_receiver.i
+
+# target to preprocess a source file
+udp_receiver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_receiver.dir/build.make CMakeFiles/udp_receiver.dir/udp_receiver.cpp.i
+.PHONY : udp_receiver.cpp.i
+
+udp_receiver.s: udp_receiver.cpp.s
+.PHONY : udp_receiver.s
+
+# target to generate assembly for a file
+udp_receiver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_receiver.dir/build.make CMakeFiles/udp_receiver.dir/udp_receiver.cpp.s
+.PHONY : udp_receiver.cpp.s
+
+udp_sender.o: udp_sender.cpp.o
+.PHONY : udp_sender.o
+
+# target to build an object file
+udp_sender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_sender.dir/build.make CMakeFiles/udp_sender.dir/udp_sender.cpp.o
+.PHONY : udp_sender.cpp.o
+
+udp_sender.i: udp_sender.cpp.i
+.PHONY : udp_sender.i
+
+# target to preprocess a source file
+udp_sender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_sender.dir/build.make CMakeFiles/udp_sender.dir/udp_sender.cpp.i
+.PHONY : udp_sender.cpp.i
+
+udp_sender.s: udp_sender.cpp.s
+.PHONY : udp_sender.s
+
+# target to generate assembly for a file
+udp_sender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_sender.dir/build.make CMakeFiles/udp_sender.dir/udp_sender.cpp.s
+.PHONY : udp_sender.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,10 +309,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... receiver"
+	@echo "... sender"
 	@echo "... test"
+	@echo "... udp_receiver"
+	@echo "... udp_sender"
+	@echo "... receiver.o"
+	@echo "... receiver.i"
+	@echo "... receiver.s"
+	@echo "... sender.o"
+	@echo "... sender.i"
+	@echo "... sender.s"
 	@echo "... test_packet.o"
 	@echo "... test_packet.i"
 	@echo "... test_packet.s"
+	@echo "... udp_receiver.o"
+	@echo "... udp_receiver.i"
+	@echo "... udp_receiver.s"
+	@echo "... udp_sender.o"
+	@echo "... udp_sender.i"
+	@echo "... udp_sender.s"
 .PHONY : help
 
 

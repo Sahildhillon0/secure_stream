@@ -59,4 +59,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test.dir/DependInfo.cmake"
+  "CMakeFiles/sender.dir/DependInfo.cmake"
+  "CMakeFiles/receiver.dir/DependInfo.cmake"
+  "CMakeFiles/udp_sender.dir/DependInfo.cmake"
+  "CMakeFiles/udp_receiver.dir/DependInfo.cmake"
   )
